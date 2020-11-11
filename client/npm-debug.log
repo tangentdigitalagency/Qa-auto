@@ -1,0 +1,155 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\15209\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'react-bootstrap/ProgressBar'
+1 verbose cli ]
+2 info using npm@3.10.10
+3 info using node@v14.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react-bootstrap/ProgressBar
+8 silly fetchOtherPackageData react-bootstrap/ProgressBar
+9 silly cache add args [ 'react-bootstrap/ProgressBar', null ]
+10 verbose cache add spec react-bootstrap/ProgressBar
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'react-bootstrap/ProgressBar',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'react-bootstrap/ProgressBar',
+11 silly cache add   spec: 'github:react-bootstrap/ProgressBar',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted: {
+11 silly cache add     type: 'github',
+11 silly cache add     ssh: 'git@github.com:react-bootstrap/ProgressBar.git',
+11 silly cache add     sshUrl: 'git+ssh://git@github.com/react-bootstrap/ProgressBar.git',
+11 silly cache add     httpsUrl: 'git+https://github.com/react-bootstrap/ProgressBar.git',
+11 silly cache add     gitUrl: 'git://github.com/react-bootstrap/ProgressBar.git',
+11 silly cache add     shortcut: 'github:react-bootstrap/ProgressBar',
+11 silly cache add     directUrl: 'https://raw.githubusercontent.com/react-bootstrap/ProgressBar/master/package.json'
+11 silly cache add   }
+11 silly cache add }
+12 verbose addRemoteGit caching react-bootstrap/ProgressBar
+13 verbose addRemoteGit react-bootstrap/ProgressBar is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/react-bootstrap/ProgressBar.git
+15 silly tryClone cloning react-bootstrap/ProgressBar via git://github.com/react-bootstrap/ProgressBar.git
+16 verbose tryClone git-github-com-react-bootstrap-ProgressBar-git-8a6e6a4e not in flight; caching
+17 verbose correctMkdir C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+18 verbose makeDirectory C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes creation not in flight; initializing
+19 verbose makeCacheDir UID & GID are irrelevant on win32
+20 info git [
+20 info git   'clone',
+20 info git   '--template=C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+20 info git   '--mirror',
+20 info git   'git://github.com/react-bootstrap/ProgressBar.git',
+20 info git   'C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-react-bootstrap-ProgressBar-git-8a6e6a4e'
+20 info git ]
+21 verbose git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-8a6e6a4e: Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-8a6e6a4e'...
+21 verbose git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-8a6e6a4e: fatal: remote error:
+21 verbose git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-8a6e6a4e:   Repository not found.
+22 silly tryHTTPS attempting to clone git+https://github.com/react-bootstrap/ProgressBar.git
+23 silly tryClone cloning react-bootstrap/ProgressBar via git+https://github.com/react-bootstrap/ProgressBar.git
+24 verbose tryClone git-https-github-com-react-bootstrap-ProgressBar-git-c627416c not in flight; caching
+25 verbose correctMkdir C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+26 info git [
+26 info git   'clone',
+26 info git   '--template=C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+26 info git   '--mirror',
+26 info git   'https://github.com/react-bootstrap/ProgressBar.git',
+26 info git   'C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-github-com-react-bootstrap-ProgressBar-git-c627416c'
+26 info git ]
+27 verbose git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-react-bootstrap-ProgressBar-git-c627416c: Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-react-bootstrap-ProgressBar-git-c627416c'...
+27 verbose git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-react-bootstrap-ProgressBar-git-c627416c: remote: Repository not found.
+27 verbose git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-react-bootstrap-ProgressBar-git-c627416c: fatal: repository 'https://github.com/react-bootstrap/ProgressBar.git/' not found
+28 silly trySSH attempting to clone git@github.com:react-bootstrap/ProgressBar.git
+29 silly tryClone cloning react-bootstrap/ProgressBar via git@github.com:react-bootstrap/ProgressBar.git
+30 verbose tryClone git-github-com-react-bootstrap-ProgressBar-git-bda994e5 not in flight; caching
+31 verbose correctMkdir C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+32 info git [
+32 info git   'clone',
+32 info git   '--template=C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+32 info git   '--mirror',
+32 info git   'git@github.com:react-bootstrap/ProgressBar.git',
+32 info git   'C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'
+32 info git ]
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5: Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'...
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5: Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5: git@github.com: Permission denied (publickey).
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5: fatal: Could not read from remote repository.
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5:
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5: Please make sure you have the correct access rights
+33 error git clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5: and the repository exists.
+34 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5
+34 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'...
+34 silly fetchPackageMetaData Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+34 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+34 silly fetchPackageMetaData fatal: Could not read from remote repository.
+34 silly fetchPackageMetaData
+34 silly fetchPackageMetaData Please make sure you have the correct access rights
+34 silly fetchPackageMetaData and the repository exists.
+34 silly fetchPackageMetaData
+34 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:303:12)
+34 silly fetchPackageMetaData     at ChildProcess.emit (events.js:315:20)
+34 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:1051:16)
+34 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:442:11)
+34 silly fetchPackageMetaData     at Socket.emit (events.js:315:20)
+34 silly fetchPackageMetaData     at Pipe.<anonymous> (net.js:670:12)
+34 silly fetchPackageMetaData  error for react-bootstrap/ProgressBar Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5
+34 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'...
+34 silly fetchPackageMetaData Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+34 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+34 silly fetchPackageMetaData fatal: Could not read from remote repository.
+34 silly fetchPackageMetaData
+34 silly fetchPackageMetaData Please make sure you have the correct access rights
+34 silly fetchPackageMetaData and the repository exists.
+34 silly fetchPackageMetaData
+34 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:303:12)
+34 silly fetchPackageMetaData     at ChildProcess.emit (events.js:315:20)
+34 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:1051:16)
+34 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:442:11)
+34 silly fetchPackageMetaData     at Socket.emit (events.js:315:20)
+34 silly fetchPackageMetaData     at Pipe.<anonymous> (net.js:670:12) {
+34 silly fetchPackageMetaData   killed: false,
+34 silly fetchPackageMetaData   code: 128,
+34 silly fetchPackageMetaData   signal: null,
+34 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\\Users\\15209\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'
+34 silly fetchPackageMetaData }
+35 silly rollbackFailedOptional Starting
+36 silly rollbackFailedOptional Finishing
+37 silly runTopLevelLifecycles Finishing
+38 silly install printInstalled
+39 verbose stack Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5
+39 verbose stack Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'...
+39 verbose stack Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+39 verbose stack git@github.com: Permission denied (publickey).
+39 verbose stack fatal: Could not read from remote repository.
+39 verbose stack
+39 verbose stack Please make sure you have the correct access rights
+39 verbose stack and the repository exists.
+39 verbose stack
+39 verbose stack     at ChildProcess.exithandler (child_process.js:303:12)
+39 verbose stack     at ChildProcess.emit (events.js:315:20)
+39 verbose stack     at maybeClose (internal/child_process.js:1051:16)
+39 verbose stack     at Socket.<anonymous> (internal/child_process.js:442:11)
+39 verbose stack     at Socket.emit (events.js:315:20)
+39 verbose stack     at Pipe.<anonymous> (net.js:670:12)
+40 verbose cwd C:\Users\15209\Desktop\QAAutoForm\client
+41 error Windows_NT 10.0.18363
+42 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\15209\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "react-bootstrap/ProgressBar"
+43 error node v14.4.0
+44 error npm  v3.10.10
+45 error code 128
+46 error Command failed: git -c core.longpaths=true clone --template=C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:react-bootstrap/ProgressBar.git C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5
+46 error Cloning into bare repository 'C:\Users\15209\AppData\Roaming\npm-cache\_git-remotes\git-github-com-react-bootstrap-ProgressBar-git-bda994e5'...
+46 error Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+46 error git@github.com: Permission denied (publickey).
+46 error fatal: Could not read from remote repository.
+46 error
+46 error Please make sure you have the correct access rights
+46 error and the repository exists.
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
