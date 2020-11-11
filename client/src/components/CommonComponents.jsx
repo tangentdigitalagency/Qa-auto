@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
-
+import ProgressBar from 'react-bootstrap/ProgressBar';
 class CommonComponents extends Component {
     render() {
         return (

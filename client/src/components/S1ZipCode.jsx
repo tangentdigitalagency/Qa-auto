@@ -1,12 +1,13 @@
 import React, { Component, useState } from "react";
 import { Input, Button, message, Form } from "antd";
+import ProgressBar from 'react-bootstrap/ProgressBar';
 import ZipCodeData from "../Assets/zipcode-data.json";
 import "./S1ZipCode.css";
 import { data } from "jquery";
 import axios from "axios";
 import zipcodeList from "../Assets/zipCodes";
 import LoadingLottie from "./LoadingLottie";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+
 
 class S1ZipCode extends Component {
   state = {
