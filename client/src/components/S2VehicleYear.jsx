@@ -5,7 +5,7 @@ import carQuery from "../Assets/carQuery.json";
 import { Select } from "antd";
 import carYears from '../Assets/carYears'
 import axios from 'axios'
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const { Option } = Select;
 
@@ -90,7 +90,7 @@ class S2VehicleYear extends Component {
 				</h3>
 
 				<div className="container pt-0 main-content-container mb-5">
-					<ProgressBar animated now={12} />
+					{/* <ProgressBar animated now={12} /> */}
 					<div>
 						<CommonComponents
 							//currentStep={this.props.currentStep}

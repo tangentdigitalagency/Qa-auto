@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./S2VehicleYear.css";
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 class S5PrimaryUse extends Component {
 	state = {};
 
@@ -12,7 +12,7 @@ class S5PrimaryUse extends Component {
 	render() {
 		return (
 			<div className="container pt-0 main-content-container2 mb-5">
-				<ProgressBar animated now={31} />
+				{/* <ProgressBar animated now={31} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}

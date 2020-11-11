@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
 import { Form } from "antd";
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 class S11DrivingHistory extends Component {
 	state = {};
 
@@ -17,7 +17,7 @@ class S11DrivingHistory extends Component {
 	render() {
 		return (
 			<div className="container p-0 main-content-container3 mb-5">
-				<ProgressBar animated now={68} />
+				{/* <ProgressBar animated now={68} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}

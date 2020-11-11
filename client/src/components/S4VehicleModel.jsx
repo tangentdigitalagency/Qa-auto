@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import carQuery from "../Assets/carQuery.json";
 import axios from 'axios'
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 class S4VehicleModel extends Component {
 	constructor(props) {
 		super(props);
@@ -67,7 +67,7 @@ class S4VehicleModel extends Component {
 	render() {
 		return (
 			<div className="container p-0 content-container main-content-container3 mb-5">
-				<ProgressBar animated now={25} />
+				{/* <ProgressBar animated now={25} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}

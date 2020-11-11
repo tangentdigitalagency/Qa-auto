@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import { Input, Button, message, Form } from "antd";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 import ZipCodeData from "../Assets/zipcode-data.json";
 import "./S1ZipCode.css";
 import { data } from "jquery";
@@ -89,7 +89,7 @@ class S1ZipCode extends Component {
         <h1 className="text-center main-heading">
           Start Saving With Quantum Assurance
         </h1>
-        <ProgressBar animated now={1} />
+        {/* <ProgressBar animated now={1} /> */}
         <div className="main-content-inner-container mb-5">
           <div className="right-number">1/16</div>
           <div className="text-center box-width">

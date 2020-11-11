@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
+
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
 import { Form, Select, Button, Checkbox } from "antd";
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 const { Option } = Select;
 
 class S12DriverData extends Component {
@@ -21,7 +21,7 @@ class S12DriverData extends Component {
 	render() {
 		return (
 			<div className="container p-0 main-content-container3 mb-5">
-				<ProgressBar animated now={75} />
+				{/* <ProgressBar animated now={75} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}

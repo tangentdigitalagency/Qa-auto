@@ -3,7 +3,7 @@ import carQuery from "../Assets/carQuery.json";
 import { Select } from "antd";
 import axios from 'axios'
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const { Option } = Select;
 
@@ -80,7 +80,7 @@ class S3VehicleName extends Component {
 	render() {
 		return (
 			<div className="container pt-0 content-container main-content-container3 mb-5">
-				<ProgressBar animated now={18} />
+				{/* <ProgressBar animated now={18} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}

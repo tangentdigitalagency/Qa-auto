@@ -5,7 +5,7 @@ import XMLParser from "react-xml-parser";
 import "./S2VehicleYear.css";
 import ProgressLottie from "./ProgressLottie";
 import CommonComponents from "./CommonComponents";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 class S15YourName extends Component {
   formRef = React.createRef();
   state = {
@@ -109,7 +109,7 @@ class S15YourName extends Component {
     const { response, loading } = this.state;
     return (
       <div className="container pt-0 content-container main-content-container3 mb-5">
-        <ProgressBar animated now={50} />
+        {/* <ProgressBar animated now={50} /> */}
         <CommonComponents
           currentStep={this.props.currentStep}
           totalSteps={this.props.totalSteps}

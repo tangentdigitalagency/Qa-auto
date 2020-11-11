@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { } from "antd";
 import { Form, Select, Button } from "antd";
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 const { Option } = Select;
 
 class S10CurrentAutoInsurance extends Component {
@@ -21,7 +21,7 @@ class S10CurrentAutoInsurance extends Component {
 	render() {
 		return (
 			<div className="container pt-0 main-content-container mb-5">
-				<ProgressBar animated now={62} />
+				{/* <ProgressBar animated now={62} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}

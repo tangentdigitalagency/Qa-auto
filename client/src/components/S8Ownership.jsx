@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CommonComponents from './CommonComponents';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 
 class S8Ownership extends Component {
 	constructor(props) {
@@ -18,7 +18,7 @@ class S8Ownership extends Component {
 	render() {
 		return (
 			<div className="container p-0 main-content-container4 mb-5">
-				<ProgressBar animated now={50} />
+				{/* <ProgressBar animated now={50} /> */}
 				<CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}
