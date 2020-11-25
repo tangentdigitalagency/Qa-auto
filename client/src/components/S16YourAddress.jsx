@@ -7,7 +7,7 @@ import ProgressLottie from "./ProgressLottie";
 import CommonComponents from "./CommonComponents";
 // import ProgressBar from 'react-bootstrap/ProgressBar';
 
-const username = this.props.username(values.firstName); 
+//const username = this.props.username(values.firstName); 
 class S15YourName extends Component {
 
   
@@ -15,7 +15,7 @@ class S15YourName extends Component {
 
   
   state = {
-    username: username,
+    username: "",
     years: "",
     stateName: "",
     error: "",
