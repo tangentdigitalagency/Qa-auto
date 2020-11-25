@@ -9,7 +9,7 @@ import CommonComponents from "./CommonComponents";
 class S15YourName extends Component {
   formRef = React.createRef();
   state = {
-    username: "",
+    username: this.state.username,
     years: "",
     stateName: "",
     error: "",
@@ -129,7 +129,7 @@ class S15YourName extends Component {
               <span style={{ textTransform: "capitalize" }}>
                 {this.state.username}
               </span>
-              , You Qualify for Major Discounts!
+              You Qualify for Major Discounts!
             </h1>
             <br />
 
