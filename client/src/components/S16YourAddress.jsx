@@ -6,10 +6,16 @@ import "./S2VehicleYear.css";
 import ProgressLottie from "./ProgressLottie";
 import CommonComponents from "./CommonComponents";
 // import ProgressBar from 'react-bootstrap/ProgressBar';
+
+const username = this.props.username(values.firstName); 
 class S15YourName extends Component {
+
+  
   formRef = React.createRef();
+
+  
   state = {
-    username: this.props.username(values.firstName),
+    username: username,
     years: "",
     stateName: "",
     error: "",
