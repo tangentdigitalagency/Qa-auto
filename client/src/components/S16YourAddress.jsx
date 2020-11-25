@@ -9,7 +9,7 @@ import CommonComponents from "./CommonComponents";
 class S15YourName extends Component {
   formRef = React.createRef();
   state = {
-    username: this.state.username,
+    username: this.props.username(values.firstName),
     years: "",
     stateName: "",
     error: "",
