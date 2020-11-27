@@ -24,11 +24,11 @@ class S9AddAnother extends Component {
 		return (
 			<div className="container p-0 main-content-container4 mb-5">
 				{/* <ProgressBar animated now={56} /> */}
-				<CommonComponents
+				{/* <CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}
 					previousStep={this.props.previousStep}
-				/>
+				/> */}
 
 				<div
 					className="container pt-0 main-content-container4 pb-5 "

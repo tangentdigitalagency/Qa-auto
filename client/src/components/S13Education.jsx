@@ -22,11 +22,11 @@ class S10CurrentAutoInsurance extends Component {
 		return (
 			<div className="container pt-0 main-content-container mb-5">
 				{/* <ProgressBar animated now={81} /> */}
-				<CommonComponents
+				{/* <CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}
 					previousStep={this.props.previousStep}
-				/>
+				/> */}
 
 
 				<div className="box-width">

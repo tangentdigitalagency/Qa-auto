@@ -13,11 +13,11 @@ class S6AnnualMileage extends Component {
 		return (
 			<div className="container p-0 main-content-container3 mb-5">
 				{/* <ProgressBar animated now={37} /> */}
-				<CommonComponents
+				{/* <CommonComponents
 					currentStep={this.props.currentStep}
 					totalSteps={this.props.totalSteps}
 					previousStep={this.props.previousStep}
-				/>
+				/> */}
 
 				<br />
 				<div

@@ -116,11 +116,11 @@ class S15YourName extends Component {
     return (
       <div className="container pt-0 content-container main-content-container3 mb-5">
         {/* <ProgressBar animated now={50} /> */}
-        <CommonComponents
+        {/* <CommonComponents
           currentStep={this.props.currentStep}
           totalSteps={this.props.totalSteps}
           previousStep={this.props.previousStep}
-        />
+        /> */}
         <br />
         <div
           className="container pt-0 main-content-container4 pb-5 "

@@ -91,7 +91,7 @@ class S1ZipCode extends Component {
         </h1>
         {/* <ProgressBar animated now={1} /> */}
         <div className="main-content-inner-container mb-5">
-          <div className="right-number">1/16</div>
+          
           <div className="text-center box-width">
             <i className="fa fa-map-marker" style={{ fontSize: "36px" }}></i>
             <br />
