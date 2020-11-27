@@ -42,7 +42,7 @@ class S15YourName extends Component {
         ...this.state,
         loading: true,
       },
-      //this.PostDataOfBusinessInsurance(this.props.postData)
+      this.PostDataOfBusinessInsurance(this.props.postData)
     );
     // axios
     // 	.post("https://leads.quotehound.com/genericPostlead.php", null, {
@@ -60,7 +60,7 @@ class S15YourName extends Component {
   PostDataOfBusinessInsurance = (postData) => {
     console.log(postData);
     Axios.post(
-      "/genericPostlead.php",
+      'https://leads.quotehound.com/genericPostlead.php',
       null,
       {
         params: this.props.postData,
