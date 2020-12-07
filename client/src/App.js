@@ -74,7 +74,7 @@ class App extends Component {
       // S4
       Vehicle_1_Model: "",
       // S5
-      Vehicle_1_Primary_Use: "unknown",
+      Vehicle_1_Primary_Use: "Pleasure",
       // S6
       Vehicle_1_Annual_Mileage: 0,
       // S7
