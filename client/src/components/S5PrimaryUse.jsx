@@ -7,7 +7,7 @@ class S5PrimaryUse extends Component {
 
 	moveNext = (e) => {
 		this.props.nextStep();
-		this.props.Vehicle_1_Primary_Use(e.target.lastChild.data);
+		this.props.vehicle_primary_use(e.target.lastChild.data);
 	};
 	render() {
 		return (

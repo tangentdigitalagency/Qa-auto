@@ -74,7 +74,7 @@ class S3VehicleName extends Component {
 
 	moveNext = (e) => {
 		this.props.nextStep();
-		this.props.Vehicle_1_Make(e.target.value);
+		this.props.vehicle_make(e.target.value);
 		this.props.nameForVehicalModel(e.target.value);
 	};
 	render() {

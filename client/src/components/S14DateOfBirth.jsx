@@ -39,7 +39,7 @@ class S14DateOfBirth extends Component {
 		// 	date[1] = "12";
 		// }
 		// const requiredFormat = date[1] + "/" + date[2] + "/" + date[3];
-		this.props.Driver_1_Birthdate(this.state.dateValue);
+		this.props.dob(this.state.dateValue);
 		this.props.nextStep();
 	};
 

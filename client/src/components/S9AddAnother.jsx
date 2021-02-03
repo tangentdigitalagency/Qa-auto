@@ -53,7 +53,12 @@ class S9AddAnother extends Component {
 								<button
 									className="btn btn-outline-primary"
 									style={{ width: "150px", height: "70px" }}
-									onClick={this.props.nextStep}
+									onClick={(value)=>{
+										this.props.additional_vehicles(value)
+									},
+									this.props.nextStep
+										
+									}
 								>
 									No
 								</button>

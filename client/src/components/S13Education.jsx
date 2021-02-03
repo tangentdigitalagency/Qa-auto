@@ -10,8 +10,8 @@ class S10CurrentAutoInsurance extends Component {
 	onFinish = (values) => {
 		// console.log("Success:", values);
 		this.props.nextStep();
-		this.props.Driver_1_Education(values.educationLevel);
-		this.props.Driver_1_Credit_Rating(values.creditScore);
+		this.props.education_level(values.educationLevel);
+		this.props.credit_score(values.creditScore);
 	};
 
 	onFinishFailed = (errorInfo) => {
@@ -61,12 +61,12 @@ class S10CurrentAutoInsurance extends Component {
 									option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
 								}
 							>
-								<Option value="High School">High School</Option>
-								<Option value="Some College">Some College</Option>
 								<Option value="Associate Degree">Associate Degree</Option>
 								<Option value="Bachelor's Degree">Bachelor's Degree</Option>
+								<Option value="High School">High School</Option>
 								<Option value="Masters Degree">Masters Degree</Option>
-								<Option value="Phd">Phd</Option>
+								<Option value="PhD">PhD</Option>
+								<Option value="Some College">Some College</Option>
 							</Select>
 						</Form.Item>
 						<h5>Credit Score</h5>
@@ -88,10 +88,10 @@ class S10CurrentAutoInsurance extends Component {
 									option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
 								}
 							>
-								<Option value="excellent">Excellent</Option>
-								<Option value="good">Good</Option>
-								<Option value="average">Average</Option>
-								<Option value="poor">Poor</Option>
+								<Option value="Average">Average</Option>
+								<Option value="Excellent">Excellent</Option>
+								<Option value="Good">Good</Option>
+								<Option value="Poor">Poor</Option>
 							</Select>
 						</Form.Item>
 

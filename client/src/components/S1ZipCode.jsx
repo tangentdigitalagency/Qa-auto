@@ -27,12 +27,12 @@ class S1ZipCode extends Component {
           console.log(this.state.getZip);
         });
         console.log(this.state.getZip);
-        console.log(this.props.Driver_1_City);
+        console.log(this.props.city);
         this.props.zipCodeCity(this.state.getZip.city);
-        this.props.Driver_1_Zip(value.zipcode);
-        this.props.Driver_1_City(this.state.getZip.city);
-        this.props.Driver_1_State(this.state.getZip.state_id);
-        this.props.Driver_1_Licensed_State(this.state.getZip.state_id);
+        this.props.zip_code(value.zipcode);
+        this.props.city(this.state.getZip.city);
+        this.props.state(this.state.getZip.state_id);
+      //  this.props.active_license(this.state.getZip.state_id);
         this.props.nextStep();
       })
       .catch((err) => message.error("Please Enter A Valid Zipcode!"));

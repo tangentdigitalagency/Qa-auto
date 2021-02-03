@@ -62,7 +62,7 @@ class S4VehicleModel extends Component {
 
 	moveNext = (e) => {
 		this.props.nextStep();
-		this.props.Vehicle_1_Model(e.target.value);
+		this.props.vehicle_model(e.target.value);
 	};
 	render() {
 		return (

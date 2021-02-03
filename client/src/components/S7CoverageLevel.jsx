@@ -6,7 +6,7 @@ class S7CoverageLevel extends Component {
 
 	moveNext = (e) => {
 
-		this.props.Vehicle_1_Coverage_Type(e.target.lastChild.data);
+		this.props.desired_coverage_level(e.target.lastChild.data);
 		this.props.nextStep();
 	};
 
@@ -34,7 +34,7 @@ class S7CoverageLevel extends Component {
 									style={{ width: "150px", height: "70px" }}
 									onClick={this.moveNext}
 								>
-									Superior
+									Basic
 								</button>
 							</div>
 							<div className="text-center p-2 col-md-3">
@@ -52,7 +52,7 @@ class S7CoverageLevel extends Component {
 									style={{ width: "150px", height: "70px" }}
 									onClick={this.moveNext}
 								>
-									Basic
+									State minimum
 								</button>
 							</div>
 							<div className="text-center p-2 col-md-3">
@@ -61,7 +61,7 @@ class S7CoverageLevel extends Component {
 									style={{ width: "150px", height: "70px" }}
 									onClick={this.moveNext}
 								>
-									State minimum
+									Superior
 								</button>
 							</div>
 						</div>

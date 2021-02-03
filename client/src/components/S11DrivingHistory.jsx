@@ -51,6 +51,9 @@ class S11DrivingHistory extends Component {
 										offlabel="No"
 										offstyle="secondary"
 										width={230}
+										onChange={(value)=>{
+											this.props.active_license(value? "Yes": "No")
+										}}
 									/>
 								</div>
 								<div className="p-2 col-md-4">
@@ -62,6 +65,9 @@ class S11DrivingHistory extends Component {
 										offlabel="No"
 										offstyle="secondary"
 										width={230}
+										onChange={(value)=>{
+											this.props.tickets_or_claims_in_last_three_years(value ? "Yes" : "No")
+										}}
 									/>
 								</div>
 								<div className="p-2 col-md-4">
@@ -74,7 +80,7 @@ class S11DrivingHistory extends Component {
 										offstyle="secondary"
 										width={230}
 										onChange={(checked3) => {
-											this.props.sr22ForPostData2(checked3 ? "Yes" : "No");
+											this.props.ever_filed_sr22(checked3 ? "Yes" : "No");
 											this.props.Driver_1_Filing_Required(checked3 ? "SR-22" : "None");
 										}}
 									/>

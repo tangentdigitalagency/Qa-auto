@@ -6,7 +6,7 @@ class S6AnnualMileage extends Component {
 
 	moveNext = (e) => {
 		this.props.nextStep();
-		this.props.Vehicle_1_Annual_Mileage(e.target.lastChild.data);
+		this.props.annual_mileage(e.target.lastChild.data);
 	};
 
 	render() {

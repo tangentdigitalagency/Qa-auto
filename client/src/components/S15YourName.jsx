@@ -8,8 +8,8 @@ class S15YourName extends Component {
 	onFinish = (values) => {
 		console.log("Success:", values);
 		this.props.username(values.firstName);
-		this.props.Driver_1_First_Name(values.firstName);
-		this.props.Driver_1_Last_Name(values.lastName);
+		this.props.first_name(values.firstName);
+		this.props.last_name(values.lastName);
 		this.props.nextStep();
 	};
 

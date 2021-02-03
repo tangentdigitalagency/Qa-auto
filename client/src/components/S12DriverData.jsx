@@ -56,7 +56,7 @@ class S12DriverData extends Component {
 										offstyle="secondary"
 										width={230}
 										onChange={(checked1) => {
-											this.props.homeOwnershipForPostData2(checked1 ? 1 : 0);
+											this.props.homeowner(checked1 ? "Yes" : "No");
 											this.setState({ homeOverChecked: !this.state.homeOverChecked });
 										}}
 									/>
@@ -76,7 +76,7 @@ class S12DriverData extends Component {
 										offstyle="secondary"
 										width={230}
 										onChange={(checked2) => {
-											this.props.Driver_1_Marital_Status(checked2 ? "Married" : "Single");
+											this.props.married(checked2 ? "Yes" : "No");
 										}}
 									/>
 								</div>
@@ -104,7 +104,7 @@ class S12DriverData extends Component {
 												option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
 											}
 											onChange={(value) => {
-												this.props.Driver_1_Gender(value);
+												this.props.gender(value);
 											}}
 										>
 											<Option value="Male">Male</Option>

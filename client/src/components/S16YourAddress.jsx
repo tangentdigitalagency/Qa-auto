@@ -29,14 +29,15 @@ class S15YourName extends Component {
   };
   onFinish = (values) => {
     console.log("Success:", values);
-    this.props.Driver_1_Address(values.streetAddress);
-    this.props.Driver_1_Email(values.email);
-    this.props.Driver_1_Daytime_Phone(this.state.Primary_Phone);
+    this.props.address(values.streetAddress);
+    this.props.email_address(values.email);
+    this.props.phone_home(this.state.Primary_Phone);
     console.log("Post Data 1 = ");
     console.log(this.props.postData);
     console.log("Post Data 2 = ");
     console.log(this.props.copyValuesToPostData2());
     this.props.nextStep();
+
     this.setState(
       {
         ...this.state,
@@ -60,16 +61,17 @@ class S15YourName extends Component {
   PostDataOfBusinessInsurance = (postData) => {
     console.log(postData);
     Axios.post(
-      'https://leads.quotehound.com/genericPostlead.php',
+      'https://quotehound.leadspediatrack.com/post.do',
       null,
       {
         params: this.props.postData,
       }
     )
       .then((res) => {
+        console.log(`res ${res}`);
         var xml = new XMLParser().parseFromString(res.data);
         if (xml.children[0].value === "Error") {
-          this.setState({
+          this.setState({ 
             loading: false,
             response: xml.children[1].value,
           });
@@ -79,7 +81,7 @@ class S15YourName extends Component {
           xml.children[0].value === "Unmatched"
         ) {
           this.props.nextStep();
-          this.props.copyValuesToPostData2();
+          
         }
       })
       .catch((err) => {

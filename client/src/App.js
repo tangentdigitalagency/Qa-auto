@@ -30,89 +30,176 @@ import { Grid, Typography } from "@material-ui/core";
 class App extends Component {
   state = {
     postData: {
-      // extra entries
+      // lp_campaign_id:"5fe0d62882ef8",
+      // lp_campaign_key:"Gn2J4NDMpk38vxyBbQm7",
+      // // extra entries
+      // Key: "rRkWg9.WrP.Ahm.Ic9hNr9kZruQMcRpNruwIc9tVxVpWrV4MgexMl8QKHpEE",
+      // TYPE: "22",
+      // IP_Address: "",
+      // SRC: "Quantum_Website_Auto",
+      // Pub_ID: 13,
+      // Sub_ID: 12,
+      // trusted_form_cert_id: "",
+      // User_Agent: "",
+      // Landing_Page: "quantumassurance.com",
+      // TCPA_Consent: "Yes",
+      // TCPA_Language:
+      //   "By hitting submit below, I provide my express written consent to the following. Telemarketing calls, text messages, emails, and postal mail from this Web site, our marketing and re-marketing network, and up to eight insurance companies or their affiliates  or representatives at the phone number (including wireless number), email address, and postal address provided by me. Telemarketing calls, text messages, emails, and postal mail (including wireless number), email address, and postal address provided by me. Calls and text messages transmitting insurance quotes, or seeking related additional information from me, using an Automated Telephone Dialing System or prerecorded or artificial voices. Electronic video monitoring and recordation of my activities on this Site; and I acknowledge that I may revoke my consent at any time by Calling 1 888-316-1350 or emailing “STOP” to  optout@quantumassurance.com.  I AGREE TO ALL OF THE ABOVE AND SEND MY QUOTE",
+      // Format: "JSON",
+      // LeadiD_Token: "",
+      // Vehicle_1_Average_One_Way_Mileage: 0,
+      // Vehicle_1_Parking: "unknown",
+      // Vehicle_1_Average_Days_Per_Week_Used: 0,
+      // Vehicle_1_Desired_Collision_Coverage: "No Coverage",
+      // Vehicle_1_Desired_Comprehensive_Coverage: "No Coverage",
+      // Driver_1_License_Status: "unknown",
+      // Driver_1_Age_When_First_Licensed: 0,
+      // Driver_1_Occupation: "Student",
+      // Driver_1_Current_Residence: "Other",
+      // tickets_or_claims_in_last_three_years: "unknown",
+      // Driver_1_Insured_Past_30_Days: "unknown",
+      // Driver_1_Continuously_Insured_Years: 1,
+      // Driver_1_Additional_Drivers: "No",
+      // additional_vehicles	: "No",
+      // Driver_1_Bankruptcy_In_Past_5_Years: "unknown",
+      // Driver_1_DUI_DWI_In_The_Past_5_Years: "unknown",
+      // Driver_1_Reposessions_In_The_Past_5_Years: "unknown",
+      // // S1
+      // zip_code: "",
+      // city: "",
+      // state: "",
+      // active_license: "",
+      // // S2
+      // vehicle_year: 0,
+      // // S3
+      // vehicle_make: "",
+      // // S4
+      // vehicle_model: "",
+      // // S5
+      // vehicle_primary_use: "Pleasure",
+      // // S6
+      // annual_mileage: 0,
+      // // S7
+      // desired_coverage_level: "",
+      // // S8
+      // vehicle_ownership: "",
+      // // S9
+
+      // // S10
+      // // Current Insurance Carrier
+      // // Continuous Coverage
+      // // S11
+      // // Active Licence?
+      // // Ticket/Claim in Last 3 years?
+      // Driver_1_Filing_Required: "None",
+      // // S12
+      // // Homeowner
+      // married: "Single",
+      // gender: "",
+      // // S13
+      // education_level: "",
+      // credit_score: "unknown",
+      // // S14
+      // dob: "",
+      // // S15
+      // first_name: "",
+      // last_name: "",
+      // // S16
+      // address: "",
+      // email_address: "",
+      // phone_home: "",
+
+      lp_campaign_id:"60184895300f1",
+      lp_campaign_key:"HLrBJGjTQP7NC3fmv6k4",
+      zip_code:"",
       Key: "rRkWg9.WrP.Ahm.Ic9hNr9kZruQMcRpNruwIc9tVxVpWrV4MgexMl8QKHpEE",
       TYPE: "22",
-      IP_Address: "",
+      IP_Address: "192.168.43.254",
       SRC: "Quantum_Website_Auto",
-      Pub_ID: 13,
-      Sub_ID: 12,
-      Trusted_Form_URL: "",
+      Pub_ID: 101,
+      Sub_ID: 2,
+      trusted_form_cert_id: "",
       User_Agent: "",
       Landing_Page: "quantumassurance.com",
       TCPA_Consent: "Yes",
       TCPA_Language:
         "By hitting submit below, I provide my express written consent to the following. Telemarketing calls, text messages, emails, and postal mail from this Web site, our marketing and re-marketing network, and up to eight insurance companies or their affiliates  or representatives at the phone number (including wireless number), email address, and postal address provided by me. Telemarketing calls, text messages, emails, and postal mail (including wireless number), email address, and postal address provided by me. Calls and text messages transmitting insurance quotes, or seeking related additional information from me, using an Automated Telephone Dialing System or prerecorded or artificial voices. Electronic video monitoring and recordation of my activities on this Site; and I acknowledge that I may revoke my consent at any time by Calling 1 888-316-1350 or emailing “STOP” to  optout@quantumassurance.com.  I AGREE TO ALL OF THE ABOVE AND SEND MY QUOTE",
       Format: "JSON",
-      LeadiD_Token: "",
+      leadid_token: "",
       Vehicle_1_Average_One_Way_Mileage: 0,
       Vehicle_1_Parking: "unknown",
       Vehicle_1_Average_Days_Per_Week_Used: 0,
       Vehicle_1_Desired_Collision_Coverage: "No Coverage",
       Vehicle_1_Desired_Comprehensive_Coverage: "No Coverage",
-      Driver_1_License_Status: "unknown",
+      active_license: "Yes",
       Driver_1_Age_When_First_Licensed: 0,
       Driver_1_Occupation: "Student",
       Driver_1_Current_Residence: "Other",
-      Driver_1_Tickets_Accidents_Claims_Past_3_Years: "unknown",
+      tickets_or_claims_in_last_three_years: "No",
       Driver_1_Insured_Past_30_Days: "unknown",
       Driver_1_Continuously_Insured_Years: 1,
       Driver_1_Additional_Drivers: "No",
-      Driver_1_Additional_Vehicles: "No",
+      additional_vehicles: "No",
       Driver_1_Bankruptcy_In_Past_5_Years: "unknown",
       Driver_1_DUI_DWI_In_The_Past_5_Years: "unknown",
       Driver_1_Reposessions_In_The_Past_5_Years: "unknown",
       // S1
-      Driver_1_Zip: "",
-      Driver_1_City: "",
-      Driver_1_State: "",
+      // zip_code: "",
+      city: "",
+      state: "",
       Driver_1_Licensed_State: "",
       // S2
-      Vehicle_1_Year: 0,
+      vehicle_year: "",
       // S3
-      Vehicle_1_Make: "",
+      vehicle_make: "",
       // S4
-      Vehicle_1_Model: "",
+      vehicle_model: "",
       // S5
-      Vehicle_1_Primary_Use: "Pleasure",
+      vehicle_primary_use: "Commute",
       // S6
-      Vehicle_1_Annual_Mileage: 0,
+      annual_mileage:"10,001-15,000" ,
       // S7
-      Vehicle_1_Coverage_Type: "",
+      desired_coverage_level: "",
       // S8
-      Vehicle_1_Ownership: "",
+      vehicle_ownership: "",
       // S9
 
       // S10
+      contiunous_coverage: "",
+      current_insurance_provider: "",
       // Current Insurance Carrier
       // Continuous Coverage
       // S11
+      ever_filed_sr22:"No",
       // Active Licence?
       // Ticket/Claim in Last 3 years?
       Driver_1_Filing_Required: "None",
+ 
       // S12
-      // Homeowner
-      Driver_1_Marital_Status: "Single",
-      Driver_1_Gender: "",
+       homeowner:"",
+      //Driver_1_Marital_Status: "Single",
+      married:"No",
+      gender: "",
       // S13
-      Driver_1_Education: "",
-      Driver_1_Credit_Rating: "unknown",
+      education_level: "",
+      credit_score:"",
+   //   Driver_1_Credit_Rating: "unknown",
       // S14
-      Driver_1_Birthdate: "",
+      dob: "",
       // S15
-      Driver_1_First_Name: "",
-      Driver_1_Last_Name: "",
+      first_name: "",
+      last_name: "",
       // S16
-      Driver_1_Address: "",
-      Driver_1_Email: "",
-      Driver_1_Daytime_Phone: "",
+      address: "",
+      email_address: "",
+      phone_home: "",
     },
     postData2: {
       email: "",
       phone: "",
       address: "",
       zip: "",
-      home_ownership: 0,
+      homeowner: 0,
       vehicles: [
         // {
         // 	year: "",
@@ -130,11 +217,11 @@ class App extends Component {
           birth_date: "",
           education: "",
           credit_rating: "",
-          sr_22: "No",
+       //   ever_filed_sr22: "No",
         },
       ],
-      current_company: "",
-      continuous_coverage: "",
+   //   current_insurance_provider: "",
+    
       //coverage_type: "",
     },
     year: 0,
@@ -142,9 +229,9 @@ class App extends Component {
     zipCodeCity: "",
     username: "",
     table: [],
-    home_ownership: 0,
-    sr_22: "No",
-    current_company: "",
+  //  homeowner: 0,
+  //  ever_filed_sr22: "No",
+  //  current_insurance_provider: "",
     continuous_coverage: "",
   };
 
@@ -154,7 +241,7 @@ class App extends Component {
         ...this.state.table,
         {
           name: this.state.name,
-          model: this.state.postData.Vehicle_1_Model,
+          model: this.state.postData.vehicle_model,
           year: this.state.year,
         },
       ],
@@ -168,10 +255,10 @@ class App extends Component {
   vehicleForPostData2 = (ownershipValue) => {
     const tempData = this.state.postData2;
     tempData.vehicles.push({
-      year: this.state.postData.Vehicle_1_Year,
-      model: this.state.postData.Vehicle_1_Model,
-      primary_purpose: this.state.postData.Vehicle_1_Primary_Use,
-      annual_mileage: this.state.postData.Vehicle_1_Annual_Mileage,
+      year: this.state.postData.vehicle_year,
+      model: this.state.postData.vehicle_model,
+      primary_purpose: this.state.postData.vehicle_primary_use,
+      annual_mileage: this.state.postData.annual_mileage,
       ownership: ownershipValue,
     });
 
@@ -184,29 +271,29 @@ class App extends Component {
 
   copyValuesToPostData2 = () => {
     var tempArray = {
-      email: this.state.postData.Driver_1_Email,
-      phone: this.state.postData.Driver_1_Daytime_Phone,
-      address: this.state.postData.Driver_1_Address,
-      zip: this.state.postData.Driver_1_Zip,
-      home_ownership: this.state.home_ownership,
+      email: this.state.postData.email_address,
+      phone: this.state.postData.phone_home,
+      address: this.state.postData.address,
+      zip: this.state.postData.zip_code,
+      homeowner: this.state.homeowner,
       vehicles: this.state.postData2.vehicles,
       drivers: [
         {
           driver:
-            this.state.postData.Driver_1_First_Name +
+            this.state.postData.first_name +
             " " +
-            this.state.postData.Driver_1_Last_Name,
-          gender: this.state.postData.Driver_1_Gender,
-          marital_status: this.state.postData.Driver_1_Marital_Status,
-          birth_date: this.state.postData.Driver_1_Birthdate,
-          education: this.state.postData.Driver_1_Education,
-          credit_rating: this.state.postData.Driver_1_Credit_Rating,
-          sr_22: this.state.sr_22,
+            this.state.postData.last_name,
+          gender: this.state.postData.gender,
+          marital_status: this.state.postData.married,
+          birth_date: this.state.postData.dob,
+          education: this.state.postData.education_level,
+          credit_rating: this.state.postData.credit_score,
+          ever_filed_sr22: this.state.ever_filed_sr22,
         },
       ],
-      current_company: this.state.current_company,
+    //  current_insurance_provider: this.state.current_insurance_provider,
       continuous_coverage: this.state.continuous_coverage,
-      coverage_type: this.state.postData.Vehicle_1_Coverage_Type,
+      coverage_type: this.state.postData.desired_coverage_level,
     };
     this.setState({ postData2: tempArray });
     window.MediaAlphaExchange = {
@@ -219,6 +306,8 @@ class App extends Component {
     window.MediaAlphaExchange__load("target");
     return this.state.postData2;
   };
+
+  
   componentDidUpdate = () => {
     console.log(this.state);
   };
@@ -240,13 +329,13 @@ class App extends Component {
   };
 
   homeOwnershipForPostData2 = (value) => {
-    this.setState({ home_ownership: value });
+    this.setState({ homeowner: value });
   };
   sr22ForPostData2 = (value) => {
-    this.setState({ sr_22: value });
+    this.setState({ ever_filed_sr22: value });
   };
   currentCompanyForPostData2 = (value) => {
-    this.setState({ current_company: value });
+    this.setState({ current_insurance_provider: value });
   };
   continuousCoverageForPostData2 = (value) => {
     this.setState({ continuous_coverage: value });
@@ -291,93 +380,87 @@ class App extends Component {
         <StepWizard initialStep={1}>
           <S1ZipCode
             zipCodeCity={this.zipCodeCity}
-            Driver_1_Zip={(value) => {
+            zip_code={(value) => {
               console.log(document.getElementById("leadid_token").value);
               console.log(document.getElementsByTagName("script")[0].src);
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Driver_1_Zip: value,
+                  zip_code: value,
                   LeadiD_Token: document.getElementById("leadid_token").value,
-                  Trusted_Form_URL: document.getElementById(
-                    "Trusted_Form_URL_0"
+                  trusted_form_cert_id: document.getElementById(
+                    "trusted_form_cert_id_0"
                   ).value,
                 },
               });
-              console.log(document.getElementById("Trusted_Form_URL_0"));
+              console.log(document.getElementById("trusted_form_cert_id_0"));
             }}
-            Driver_1_City={(value) =>
+
+            city={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_City: value },
+                postData: { ...this.state.postData, city: value },
               })
             }
-            Driver_1_State={(value) =>
+            state={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_State: value },
+                postData: { ...this.state.postData, state: value },
               })
             }
-            Driver_1_Licensed_State={(value) =>
-              this.setState({
-                postData: {
-                  ...this.state.postData,
-                  Driver_1_Licensed_State: value,
-                },
-              })
-            }
+            
           />
           <S2VehicleYear
             yearForVehicleName={this.yearForVehicleName}
             zipCodeCity={this.state.zipCodeCity}
-            Vehicle_1_Year={(value) =>
+            vehicle_year={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Vehicle_1_Year: value },
+                postData: { ...this.state.postData, vehicle_year: value },
               })
             }
           />
           <S3VehicleName
             year={this.state.year}
             nameForVehicalModel={this.nameForVehicalModel}
-            Vehicle_1_Make={(value) =>
+            vehicle_make={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Vehicle_1_Make: value },
+                postData: { ...this.state.postData, vehicle_make: value },
               })
             }
           />
           <S4VehicleModel
             searchModel={{ year: this.state.year, make: this.state.name }}
-            Vehicle_1_Model={(value) =>
+            vehicle_model={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Vehicle_1_Model: value },
+                postData: { ...this.state.postData, vehicle_model: value },
               })
             }
           />
           <S5PrimaryUse
             name={this.state.name}
-            Vehicle_1_Primary_Use={(value) =>
+            vehicle_primary_use={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Vehicle_1_Primary_Use: value,
+                  vehicle_primary_use: value,
                 },
               })
             }
           />
           <S6AnnualMileage
-            Vehicle_1_Annual_Mileage={(value) =>
+            annual_mileage={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Vehicle_1_Annual_Mileage: value,
+                  annual_mileage: value,
                 },
               })
             }
           />
           <S7CoverageLevel
-            Vehicle_1_Coverage_Type={(value) =>
+            desired_coverage_level={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Vehicle_1_Coverage_Type: value,
+                  desired_coverage_level: value,
                 },
               })
             }
@@ -386,11 +469,11 @@ class App extends Component {
             name={this.state.name}
             maintainTable={this.maintainTable}
             vehicleForPostData2={this.vehicleForPostData2}
-            Vehicle_1_Ownership={(value) =>
+            vehicle_ownership={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Vehicle_1_Ownership: value,
+                  vehicle_ownership: value,
                 },
               })
             }
@@ -400,14 +483,60 @@ class App extends Component {
             deleteTableItem={this.deleteTableItem}
             postData2={this.state.postData2}
             deleteVehicleForPostData2={this.deleteVehicleForPostData2}
+            additional_vehicles	={(value)=>
+              this.setState({
+                postData: {
+                  ...this.state.postData,
+                  additional_vehicles: value,
+                },
+              })
+            }
+
           />
           <S10CurrentAutoInsurance
-            currentCompanyForPostData2={this.currentCompanyForPostData2}
-            continuousCoverageForPostData2={this.continuousCoverageForPostData2}
+             current_insurance_provider={(value)=>
+              this.setState({
+                postData: {
+                  ...this.state.postData,
+                  current_insurance_provider: value,
+                },
+              })
+            }
+            contiunous_coverage={(value)=>
+              this.setState({
+                postData: {
+                  ...this.state.postData,
+                  contiunous_coverage: value,
+                },
+              })
+            }
           />
 
           <S11DrivingHistory
-            sr22ForPostData2={this.sr22ForPostData2}
+            ever_filed_sr22={(value)=>
+              this.setState({
+                postData: {
+                  ...this.state.postData,
+                  ever_filed_sr22: value,
+                },
+              })
+            }
+            tickets_or_claims_in_last_three_years={(value)=>
+              this.setState({
+                postData: {
+                  ...this.state.postData,
+                  tickets_or_claims_in_last_three_years: value,
+                },
+              })
+            }
+            active_license={(value) =>
+              this.setState({
+                postData: {
+                  ...this.state.postData,
+                  active_license: value,
+                },
+              })
+            }
             Driver_1_Filing_Required={(value) =>
               this.setState({
                 postData: {
@@ -418,56 +547,60 @@ class App extends Component {
             }
           />
           <S12DriverData
-            homeOwnershipForPostData2={this.homeOwnershipForPostData2}
-            Driver_1_Gender={(value) =>
+            homeowner={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_Gender: value },
+                postData: { ...this.state.postData, homeowner: value },
               })
             }
-            Driver_1_Marital_Status={(value) =>
+            gender={(value) =>
+              this.setState({
+                postData: { ...this.state.postData, gender: value },
+              })
+            }
+            married={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Driver_1_Marital_Status: value,
+                  married: value,
                 },
               })
             }
           />
           <S13Education
-            Driver_1_Education={(value) =>
+            education_level={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_Education: value },
+                postData: { ...this.state.postData, education_level: value },
               })
             }
-            Driver_1_Credit_Rating={(value) =>
+            credit_score={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Driver_1_Credit_Rating: value,
+                  credit_score: value,
                 },
               })
             }
           />
           <S14DateOfBirth
-            Driver_1_Birthdate={(value) =>
+            dob={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_Birthdate: value },
+                postData: { ...this.state.postData, dob: value },
               })
             }
           />
           <S15YourName
             username={this.username}
-            Driver_1_First_Name={(value) =>
+            first_name={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Driver_1_First_Name: value,
+                  first_name: value,
                 },
               })
             }
-            Driver_1_Last_Name={(value) =>
+            last_name={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_Last_Name: value },
+                postData: { ...this.state.postData, last_name: value },
               })
             }
           />
@@ -475,21 +608,21 @@ class App extends Component {
             username={this.state.username}
             postData={this.state.postData}
             copyValuesToPostData2={this.copyValuesToPostData2}
-            Driver_1_Address={(value) =>
+            address={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_Address: value },
+                postData: { ...this.state.postData, address: value },
               })
             }
-            Driver_1_Email={(value) =>
+            email_address={(value) =>
               this.setState({
-                postData: { ...this.state.postData, Driver_1_Email: value },
+                postData: { ...this.state.postData, email_address: value },
               })
             }
-            Driver_1_Daytime_Phone={(value) =>
+            phone_home={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
-                  Driver_1_Daytime_Phone: value,
+                  phone_home: value,
                 },
               })
             }

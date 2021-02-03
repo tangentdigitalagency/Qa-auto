@@ -10,7 +10,7 @@ class S8Ownership extends Component {
 
 	moveNext = (e) => {
 		this.props.nextStep();
-		this.props.Vehicle_1_Ownership(e.target.lastChild.data);
+		this.props.vehicle_ownership(e.target.lastChild.data);
 		this.props.maintainTable();
 		this.props.vehicleForPostData2(e.target.lastChild.data);
 	};

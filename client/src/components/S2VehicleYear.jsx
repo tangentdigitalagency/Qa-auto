@@ -78,7 +78,7 @@ class S2VehicleYear extends Component {
 
 	moveNext = (e) => {
 		this.props.nextStep();
-		this.props.Vehicle_1_Year(Number(e.target.value));
+		this.props.vehicle_year(Number(e.target.value));
 		this.props.yearForVehicleName(Number(e.target.value));
 	};
 	render() {
