@@ -30,94 +30,16 @@ import { Grid, Typography } from "@material-ui/core";
 class App extends Component {
   state = {
     postData: {
-      // lp_campaign_id:"5fe0d62882ef8",
-      // lp_campaign_key:"Gn2J4NDMpk38vxyBbQm7",
-      // // extra entries
-      // Key: "rRkWg9.WrP.Ahm.Ic9hNr9kZruQMcRpNruwIc9tVxVpWrV4MgexMl8QKHpEE",
-      // TYPE: "22",
-      // IP_Address: "",
-      // SRC: "Quantum_Website_Auto",
-      // Pub_ID: 13,
-      // Sub_ID: 12,
-      // trusted_form_cert_id: "",
-      // User_Agent: "",
-      // Landing_Page: "quantumassurance.com",
-      // TCPA_Consent: "Yes",
-      // TCPA_Language:
-      //   "By hitting submit below, I provide my express written consent to the following. Telemarketing calls, text messages, emails, and postal mail from this Web site, our marketing and re-marketing network, and up to eight insurance companies or their affiliates  or representatives at the phone number (including wireless number), email address, and postal address provided by me. Telemarketing calls, text messages, emails, and postal mail (including wireless number), email address, and postal address provided by me. Calls and text messages transmitting insurance quotes, or seeking related additional information from me, using an Automated Telephone Dialing System or prerecorded or artificial voices. Electronic video monitoring and recordation of my activities on this Site; and I acknowledge that I may revoke my consent at any time by Calling 1 888-316-1350 or emailing “STOP” to  optout@quantumassurance.com.  I AGREE TO ALL OF THE ABOVE AND SEND MY QUOTE",
-      // Format: "JSON",
-      // LeadiD_Token: "",
-      // Vehicle_1_Average_One_Way_Mileage: 0,
-      // Vehicle_1_Parking: "unknown",
-      // Vehicle_1_Average_Days_Per_Week_Used: 0,
-      // Vehicle_1_Desired_Collision_Coverage: "No Coverage",
-      // Vehicle_1_Desired_Comprehensive_Coverage: "No Coverage",
-      // Driver_1_License_Status: "unknown",
-      // Driver_1_Age_When_First_Licensed: 0,
-      // Driver_1_Occupation: "Student",
-      // Driver_1_Current_Residence: "Other",
-      // tickets_or_claims_in_last_three_years: "unknown",
-      // Driver_1_Insured_Past_30_Days: "unknown",
-      // Driver_1_Continuously_Insured_Years: 1,
-      // Driver_1_Additional_Drivers: "No",
-      // additional_vehicles	: "No",
-      // Driver_1_Bankruptcy_In_Past_5_Years: "unknown",
-      // Driver_1_DUI_DWI_In_The_Past_5_Years: "unknown",
-      // Driver_1_Reposessions_In_The_Past_5_Years: "unknown",
-      // // S1
-      // zip_code: "",
-      // city: "",
-      // state: "",
-      // active_license: "",
-      // // S2
-      // vehicle_year: 0,
-      // // S3
-      // vehicle_make: "",
-      // // S4
-      // vehicle_model: "",
-      // // S5
-      // vehicle_primary_use: "Pleasure",
-      // // S6
-      // annual_mileage: 0,
-      // // S7
-      // desired_coverage_level: "",
-      // // S8
-      // vehicle_ownership: "",
-      // // S9
-
-      // // S10
-      // // Current Insurance Carrier
-      // // Continuous Coverage
-      // // S11
-      // // Active Licence?
-      // // Ticket/Claim in Last 3 years?
-      // Driver_1_Filing_Required: "None",
-      // // S12
-      // // Homeowner
-      // married: "Single",
-      // gender: "",
-      // // S13
-      // education_level: "",
-      // credit_score: "unknown",
-      // // S14
-      // dob: "",
-      // // S15
-      // first_name: "",
-      // last_name: "",
-      // // S16
-      // address: "",
-      // email_address: "",
-      // phone_home: "",
-
-      lp_campaign_id:"60184895300f1",
-      lp_campaign_key:"HLrBJGjTQP7NC3fmv6k4",
-      zip_code:"",
+      lp_campaign_id: "60184895300f1",
+      lp_campaign_key: "HLrBJGjTQP7NC3fmv6k4",
+      zip_code: "",
       Key: "rRkWg9.WrP.Ahm.Ic9hNr9kZruQMcRpNruwIc9tVxVpWrV4MgexMl8QKHpEE",
       TYPE: "22",
       IP_Address: "192.168.43.254",
       SRC: "Quantum_Website_Auto",
       Pub_ID: 101,
       Sub_ID: 2,
+      gclid: '',
       trusted_form_cert_id: "",
       User_Agent: "",
       Landing_Page: "quantumassurance.com",
@@ -157,7 +79,7 @@ class App extends Component {
       // S5
       vehicle_primary_use: "Commute",
       // S6
-      annual_mileage:"10,001-15,000" ,
+      annual_mileage: "10,001-15,000",
       // S7
       desired_coverage_level: "",
       // S8
@@ -170,20 +92,20 @@ class App extends Component {
       // Current Insurance Carrier
       // Continuous Coverage
       // S11
-      ever_filed_sr22:"No",
+      ever_filed_sr22: "No",
       // Active Licence?
       // Ticket/Claim in Last 3 years?
       Driver_1_Filing_Required: "None",
- 
+
       // S12
-       homeowner:"",
+      homeowner: "Yes",
       //Driver_1_Marital_Status: "Single",
-      married:"No",
+      married: "No",
       gender: "",
       // S13
       education_level: "",
-      credit_score:"",
-   //   Driver_1_Credit_Rating: "unknown",
+      credit_score: "",
+      //   Driver_1_Credit_Rating: "unknown",
       // S14
       dob: "",
       // S15
@@ -217,11 +139,11 @@ class App extends Component {
           birth_date: "",
           education: "",
           credit_rating: "",
-       //   ever_filed_sr22: "No",
+          //   ever_filed_sr22: "No",
         },
       ],
-   //   current_insurance_provider: "",
-    
+      //   current_insurance_provider: "",
+
       //coverage_type: "",
     },
     year: 0,
@@ -229,9 +151,9 @@ class App extends Component {
     zipCodeCity: "",
     username: "",
     table: [],
-  //  homeowner: 0,
-  //  ever_filed_sr22: "No",
-  //  current_insurance_provider: "",
+    //  homeowner: 0,
+    //  ever_filed_sr22: "No",
+    //  current_insurance_provider: "",
     continuous_coverage: "",
   };
 
@@ -291,7 +213,7 @@ class App extends Component {
           ever_filed_sr22: this.state.ever_filed_sr22,
         },
       ],
-    //  current_insurance_provider: this.state.current_insurance_provider,
+      //  current_insurance_provider: this.state.current_insurance_provider,
       continuous_coverage: this.state.continuous_coverage,
       coverage_type: this.state.postData.desired_coverage_level,
     };
@@ -307,7 +229,7 @@ class App extends Component {
     return this.state.postData2;
   };
 
-  
+
   componentDidUpdate = () => {
     console.log(this.state);
   };
@@ -391,6 +313,7 @@ class App extends Component {
                   trusted_form_cert_id: document.getElementById(
                     "trusted_form_cert_id_0"
                   ).value,
+                  gclid: document.getElementById("gclid_field").value,
                 },
               });
               console.log(document.getElementById("trusted_form_cert_id_0"));
@@ -406,7 +329,7 @@ class App extends Component {
                 postData: { ...this.state.postData, state: value },
               })
             }
-            
+
           />
           <S2VehicleYear
             yearForVehicleName={this.yearForVehicleName}
@@ -483,7 +406,7 @@ class App extends Component {
             deleteTableItem={this.deleteTableItem}
             postData2={this.state.postData2}
             deleteVehicleForPostData2={this.deleteVehicleForPostData2}
-            additional_vehicles	={(value)=>
+            additional_vehicles={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
@@ -494,7 +417,7 @@ class App extends Component {
 
           />
           <S10CurrentAutoInsurance
-             current_insurance_provider={(value)=>
+            current_insurance_provider={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
@@ -502,7 +425,7 @@ class App extends Component {
                 },
               })
             }
-            contiunous_coverage={(value)=>
+            contiunous_coverage={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
@@ -513,7 +436,7 @@ class App extends Component {
           />
 
           <S11DrivingHistory
-            ever_filed_sr22={(value)=>
+            ever_filed_sr22={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
@@ -521,7 +444,7 @@ class App extends Component {
                 },
               })
             }
-            tickets_or_claims_in_last_three_years={(value)=>
+            tickets_or_claims_in_last_three_years={(value) =>
               this.setState({
                 postData: {
                   ...this.state.postData,
