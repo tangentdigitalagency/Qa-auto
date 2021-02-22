@@ -243,7 +243,7 @@ class S10CurrentAutoInsurance extends Component {
 						
 							<Option value="Company Not Listed">Company Not Listed</Option>
                                                 <Option value="State Farm Insurance">State Farm Insurance</Option>
-                                                <Option value="21st Century">21st Century Insurance</Option>
+                                                <Option value="21st Century Insurance">21st Century Insurance</Option>
                                                 <Option value="AAA Insurance Co.">AAA Insurance Co.</Option>
                                                 <Option value="AIG">AIG</Option>
                                                 <Option value="AIU Insurance">AIU Insurance</Option>
