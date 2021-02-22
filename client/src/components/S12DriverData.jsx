@@ -76,7 +76,7 @@ class S12DriverData extends Component {
 										offstyle="secondary"
 										width={230}
 										onChange={(checked2) => {
-											this.props.married(checked2 ? "Yes" : "No");
+											this.props.married(checked2 ? "Married" : "Single");
 										}}
 									/>
 								</div>
